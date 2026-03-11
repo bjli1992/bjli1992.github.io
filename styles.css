@@ -121,15 +121,6 @@ ul { list-style: none; }
   border-bottom: 1px solid var(--border);
 }
 
-.profile-photo {
-  width: 120px !important;
-  height: 120px !important;
-  max-width: 120px !important;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
-  margin-bottom: 16px;
-}
 
 .profile-header h1 {
   font-size: 1.75rem;
