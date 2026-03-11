@@ -3,23 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bingjie Li | Assistant Professor</title>
+  <meta name="description" content="Bingjie Li, Assistant Professor at SIMIS Shanghai, specializing in geometric AI and biomedical data science." />
+  <title>Bingjie Li | SIMIS</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav id="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-logo">BL</a>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Bingjie Li</a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="cv.html">CV</a></li>
       </ul>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -27,327 +25,54 @@
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section id="hero">
-    <canvas id="heroCanvas"></canvas>
-    <div class="hero-content">
-      <div class="hero-badge">Assistant Professor · SIMIS Shanghai</div>
-      <h1 class="hero-name">
-        <span class="name-en">Bingjie Li</span>
-        <span class="name-zh">李冰杰</span>
-      </h1>
-      <p class="hero-tagline">Geometric AI for biomedical data —<br>from manifold theory to precision medicine.</p>
-      <div class="hero-cta">
-        <a href="#research" class="btn btn-primary">View Research</a>
-        <a href="#contact" class="btn btn-outline">Get in Touch</a>
-      </div>
-    </div>
-    <div class="hero-scroll-hint">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about">
+  <main>
     <div class="container">
-      <div class="section-label">About</div>
-      <div class="about-grid">
-        <div class="about-avatar">
-          <div class="avatar-placeholder">
-            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="40" cy="30" r="18" stroke="var(--accent)" stroke-width="2"/>
-              <path d="M8 72c0-17.673 14.327-32 32-32s32 14.327 32 32" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div class="avatar-info">
-            <div class="info-item">
-              <span class="info-label">Position</span>
-              <span class="info-value">Assistant Professor</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">Institution</span>
-              <span class="info-value">SIMIS, Shanghai</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">Field</span>
-              <span class="info-value">Applied Statistics · Biomedical AI</span>
-            </div>
-          </div>
+
+      <!-- Profile -->
+      <div class="profile-layout">
+        <div class="photo-placeholder">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="38" r="22" stroke="#bbb" stroke-width="1.5"/>
+            <path d="M10 90c0-22.1 17.9-40 40-40s40 17.9 40 40" stroke="#bbb" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
         </div>
-        <div class="about-text">
-          <h2>Building bridges between mathematics and medicine.</h2>
-          <p>I am an Assistant Professor at the <strong>Shanghai Institute for Mathematics and Interdisciplinary Sciences (SIMIS)</strong>, specializing in biomedical data science at the intersection of applied mathematics and medicine.</p>
-          <p>My research focuses on developing geometric and AI-driven frameworks — particularly <em>manifold fitting</em> and <em>manifold learning</em> — to analyze high-dimensional, noisy biomedical data such as single-cell sequencing, metabolomics, and genomics.</p>
-          <p>I have published first-author and co-first-author work in top venues including <strong>PNAS</strong> and <strong>Nature Communications</strong>, with methods recognized internationally for advancing single-cell analysis, population-scale metabolomics, and robust clustering.</p>
-          <p>My long-term goal is to bridge rigorous mathematical theory and real-world precision medicine, enabling early disease prediction and individualized intervention at scale.</p>
-          <div class="about-stats">
-            <div class="stat">
-              <span class="stat-number">5+</span>
-              <span class="stat-label">Publications in top journals</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">25+</span>
-              <span class="stat-label">Benchmark datasets validated</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">210K+</span>
-              <span class="stat-label">Individuals in population study</span>
-            </div>
+        <div class="profile-info">
+          <h1>Bingjie Li <span class="name-zh">李冰杰</span></h1>
+          <p class="profile-title">Assistant Professor</p>
+          <p class="profile-institution">Shanghai Institute for Mathematics and Interdisciplinary Sciences (SIMIS)</p>
+          <div class="profile-contact">
+            <span>Email: <a href="mailto:bjli@simis.cn">bjli@simis.cn</a></span>
+            <span>Location: Shanghai, China</span>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Research / Publications -->
-  <section id="research">
-    <div class="container">
-      <div class="section-label">Research</div>
-      <h2 class="section-title">Selected Publications</h2>
-      <p class="section-subtitle">Representative works at the interface of manifold theory, machine learning, and biomedical data science.</p>
-
-      <div class="pub-list">
-
-        <article class="pub-card" data-index="1">
-          <div class="pub-meta">
-            <span class="pub-venue pnas">PNAS 2025</span>
-            <span class="pub-role">Co-first Author (1st)</span>
-          </div>
-          <h3 class="pub-title">Manifold fitting reveals metabolomic heterogeneity and disease associations in UK Biobank populations</h3>
-          <p class="pub-desc">Applied manifold fitting to the UK Biobank cohort (~210,000 individuals), identifying high-risk subpopulations across three major metabolic functional modules and associating them with 300+ disease risks.</p>
-          <div class="pub-tags">
-            <span>Metabolomics</span>
-            <span>UK Biobank</span>
-            <span>Manifold Fitting</span>
-            <span>Population Health</span>
-          </div>
-        </article>
-
-        <article class="pub-card" data-index="2">
-          <div class="pub-meta">
-            <span class="pub-venue nature-comm">Nature Communications 2025</span>
-            <span class="pub-role">Co-first Author (1st)</span>
-          </div>
-          <h3 class="pub-title">CellScope: high-performance cell atlas workflow with tree-structured representation</h3>
-          <p class="pub-desc">A two-stage manifold fitting framework for building tree-structured cell atlases. Outperforms existing methods across 36 datasets; successfully resolved immune heterogeneity in COVID-19 patients.</p>
-          <div class="pub-tags">
-            <span>Single-cell</span>
-            <span>Cell Atlas</span>
-            <span>COVID-19</span>
-            <span>Tree Structure</span>
-          </div>
-        </article>
-
-        <article class="pub-card" data-index="3">
-          <div class="pub-meta">
-            <span class="pub-venue pnas">PNAS 2024</span>
-            <span class="pub-role">Co-first Author (2nd)</span>
-          </div>
-          <h3 class="pub-title">Single-cell analysis via manifold fitting: A framework for RNA clustering and beyond</h3>
-          <p class="pub-desc">Introduced scAMF, a manifold-fitting-based framework surpassing leading deep learning methods on 25 cross-species datasets. Boosted mouse embryonic stem cell identification accuracy from 57% to 100%.</p>
-          <div class="pub-tags">
-            <span>scRNA-seq</span>
-            <span>Manifold Fitting</span>
-            <span>Clustering</span>
-            <span>Deep Learning</span>
-          </div>
-        </article>
-
-        <article class="pub-card" data-index="4">
-          <div class="pub-meta">
-            <span class="pub-venue cell-press">Patterns (Cell Press) 2025</span>
-            <span class="pub-role">Co-corresponding Author</span>
-          </div>
-          <h3 class="pub-title">Global understanding via local extraction for data clustering and visualization (GULE)</h3>
-          <p class="pub-desc">A universal clustering framework using "local consistency evaluation → global structure propagation." Achieves 89.6% average accuracy across 21 cross-domain datasets.</p>
-          <div class="pub-tags">
-            <span>Clustering</span>
-            <span>Visualization</span>
-            <span>Graph Learning</span>
-            <span>Universal Framework</span>
-          </div>
-        </article>
-
-        <article class="pub-card" data-index="5">
-          <div class="pub-meta">
-            <span class="pub-venue arxiv">arXiv 2023</span>
-            <span class="pub-role">Collaborator</span>
-          </div>
-          <h3 class="pub-title">Manifold fitting</h3>
-          <p class="pub-desc">Foundational theoretical work on manifold fitting. Cited by Fields Medalist C. Fefferman. Establishes the rigorous mathematical foundation underlying subsequent applied research.</p>
-          <div class="pub-tags">
-            <span>Manifold Theory</span>
-            <span>Statistical Learning</span>
-            <span>arXiv:2304.07680</span>
-          </div>
-          <a href="https://arxiv.org/abs/2304.07680" target="_blank" rel="noopener" class="pub-link">arXiv →</a>
-        </article>
-
+      <!-- Bio -->
+      <div class="bio-section">
+        <h2>About</h2>
+        <p>
+          I am an Assistant Professor at the <strong>Shanghai Institute for Mathematics and Interdisciplinary Sciences (SIMIS)</strong>,
+          specializing in biomedical data science at the intersection of applied mathematics and medicine.
+        </p>
+        <p>
+          My research focuses on developing geometric and AI-driven frameworks — particularly
+          <em>manifold fitting</em> and <em>manifold learning</em> — to analyze high-dimensional, noisy biomedical data
+          such as single-cell sequencing, metabolomics, and genomics.
+        </p>
+        <p>
+          I have published first-author and co-first-author work in top venues including
+          <strong>PNAS</strong> and <strong>Nature Communications</strong>, with methods recognized internationally
+          for advancing single-cell analysis, population-scale metabolomics, and robust clustering.
+          My long-term goal is to bridge rigorous mathematical theory and real-world precision medicine,
+          enabling early disease prediction and individualized intervention at scale.
+        </p>
       </div>
+
     </div>
-  </section>
+  </main>
 
-  <!-- Skills -->
-  <section id="skills">
-    <div class="container">
-      <div class="section-label">Expertise</div>
-      <h2 class="section-title">Skills & Tools</h2>
-      <div class="skills-grid">
-
-        <div class="skill-group">
-          <h3 class="skill-group-title">
-            <span class="skill-icon">∂</span>
-            Mathematical Foundations
-          </h3>
-          <ul class="skill-list">
-            <li>Manifold Learning &amp; Fitting</li>
-            <li>Topological Data Analysis</li>
-            <li>Spectral Clustering</li>
-            <li>Statistical Learning Theory</li>
-            <li>Differential Geometry</li>
-          </ul>
-        </div>
-
-        <div class="skill-group">
-          <h3 class="skill-group-title">
-            <span class="skill-icon">&lt;/&gt;</span>
-            Programming Languages
-          </h3>
-          <ul class="skill-list">
-            <li>Python</li>
-            <li>R</li>
-            <li>MATLAB</li>
-          </ul>
-        </div>
-
-        <div class="skill-group">
-          <h3 class="skill-group-title">
-            <span class="skill-icon">⚙</span>
-            Frameworks &amp; Tools
-          </h3>
-          <ul class="skill-list">
-            <li>PyTorch</li>
-            <li>scikit-learn</li>
-            <li>Scanpy</li>
-            <li>Seurat</li>
-          </ul>
-        </div>
-
-        <div class="skill-group">
-          <h3 class="skill-group-title">
-            <span class="skill-icon">🔬</span>
-            Research Domains
-          </h3>
-          <ul class="skill-list">
-            <li>Single-cell Transcriptomics</li>
-            <li>Metabolomics</li>
-            <li>Precision Medicine</li>
-            <li>Unsupervised Learning</li>
-            <li>Data Visualization</li>
-            <li>Biomedical Data Science</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience / Education -->
-  <section id="experience">
-    <div class="container">
-      <div class="section-label">Journey</div>
-      <h2 class="section-title">Education &amp; Experience</h2>
-      <div class="timeline">
-
-        <div class="timeline-item current">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2025.07 — Present</div>
-          <div class="timeline-content">
-            <div class="timeline-type">Position</div>
-            <h3>Assistant Professor</h3>
-            <p class="timeline-org">Shanghai Institute for Mathematics and Interdisciplinary Sciences (SIMIS)</p>
-            <p class="timeline-field">Applied Statistics</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2021.12 — 2025.06</div>
-          <div class="timeline-content">
-            <div class="timeline-type">Postdoctoral Research</div>
-            <h3>Postdoctoral Researcher</h3>
-            <p class="timeline-org">National University of Singapore (NUS)</p>
-            <p class="timeline-field">Statistics &amp; Big Data</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2015.09 — 2021.09</div>
-          <div class="timeline-content">
-            <div class="timeline-type">Doctoral Degree</div>
-            <h3>Ph.D. in Computational Mathematics</h3>
-            <p class="timeline-org">Zhejiang University (ZJU)</p>
-            <p class="timeline-field">Advisor: Prof. Zhenyue Zhang (张振跃)</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2011.09 — 2015.06</div>
-          <div class="timeline-content">
-            <div class="timeline-type">Bachelor's Degree</div>
-            <h3>B.S. in Mathematics (Hongyi Honors Class)</h3>
-            <p class="timeline-org">Wuhan University</p>
-            <p class="timeline-field">Advisor: Prof. Qibin Fan (樊启斌)</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <div class="container">
-      <div class="section-label">Contact</div>
-      <h2 class="section-title">Get in Touch</h2>
-      <p class="section-subtitle">Interested in collaboration, research discussions, or academic inquiries? Feel free to reach out.</p>
-      <div class="contact-card">
-        <div class="contact-item">
-          <div class="contact-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <polyline points="22,6 12,13 2,6"/>
-            </svg>
-          </div>
-          <div class="contact-details">
-            <span class="contact-label">Email</span>
-            <a href="mailto:11535017@zju.edu.cn" class="contact-value">11535017@zju.edu.cn</a>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-              <circle cx="12" cy="10" r="3"/>
-            </svg>
-          </div>
-          <div class="contact-details">
-            <span class="contact-label">Location</span>
-            <span class="contact-value">Shanghai, China</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    <div class="container">
-      <p>© 2026 Bingjie Li (李冰杰) · Built with geometry and care.</p>
-    </div>
+    <p>&copy; 2026 Bingjie Li (李冰杰) &middot; Shanghai Institute for Mathematics and Interdisciplinary Sciences</p>
   </footer>
 
   <script src="script.js"></script>
