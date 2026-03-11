@@ -113,37 +113,20 @@ ul { list-style: none; }
 }
 
 /* ============================================================
-   HOME — PROFILE
+   HOME — PROFILE HEADER
    ============================================================ */
-.profile-layout {
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 36px;
-  align-items: start;
+.profile-header {
   margin-bottom: 44px;
   padding-bottom: 36px;
   border-bottom: 1px solid var(--border);
 }
 
-.photo-placeholder {
-  width: 160px;
-  height: 200px;
-  background: var(--bg-alt);
-  border: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.photo-placeholder svg {
-  width: 72px;
-  height: 72px;
-}
-
-.profile-info h1 {
+.profile-header h1 {
   font-size: 1.75rem;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 6px;
+  color: var(--text);
 }
 
 .name-zh {
@@ -202,6 +185,52 @@ ul { list-style: none; }
 
 .bio-section p strong { color: var(--text); font-weight: 600; }
 .bio-section p em    { color: var(--text); font-style: italic; }
+
+/* ============================================================
+   HOME — INTEREST LIST & EXPERIENCE
+   ============================================================ */
+.interest-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.interest-list li {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  line-height: 1.65;
+}
+
+.interest-list li strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.exp-item {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 16px;
+  margin-bottom: 22px;
+  font-size: 0.9rem;
+}
+
+.exp-date {
+  color: var(--text-light);
+  font-size: 0.82rem;
+  padding-top: 2px;
+  line-height: 1.6;
+}
+
+.exp-detail {
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.exp-detail strong {
+  color: var(--text);
+  font-weight: 600;
+}
 
 /* ============================================================
    PAGE HEADER (used in sub-pages)
@@ -400,14 +429,9 @@ footer {
     gap: 16px;
   }
 
-  .profile-layout {
+  .exp-item {
     grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .photo-placeholder {
-    width: 120px;
-    height: 150px;
+    gap: 2px;
   }
 
   .cv-item {
